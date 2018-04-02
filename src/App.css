@@ -1,0 +1,183 @@
+header {
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content {
+    display: flex;
+    height: 90vh;
+    box-sizing: border-box;
+    border-top: 1px solid #eee;
+}
+
+.leftContent {
+    width: 250px;
+    overflow: hidden;
+    overflow-y: scroll;
+    border-right: 1px solid #eee;
+    box-sizing: border-box;
+}
+
+.rightContent {
+    flex: 1;
+}
+
+.categoryList {
+    display: flex;
+    flex-direction: column;
+}
+
+.categoryItem {
+    height: 44px;
+    line-height: 44px;
+    padding: 0 20px;
+    border-bottom: 1px solid #eeeeee;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+
+.flex {
+    display: flex;
+}
+
+.flexBox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.justify-content {
+    justify-content: center;
+}
+
+.align-items {
+    align-items: center;
+}
+
+.flex1 {
+    flex: 1;
+}
+
+.actionBar {
+    height: 50px;
+    justify-content: space-between;
+    padding: 0 30px;
+    border-bottom: 1px solid #eee;
+}
+
+.actionBar select {
+    margin: 0 10px;
+}
+
+.btn {
+    display: inline-block;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    border: 1px solid transparent;
+    padding: .375rem .75rem;
+    font-size: 1rem;
+    line-height: 1.5;
+    border-radius: .25rem;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: #007bff;
+    border-color: #007bff;
+}
+
+.btn-info {
+    color: #fff;
+    background-color: #5bc0de;
+    border-color: #46b8da;
+}
+
+.btn-danger {
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+}
+
+.postsList {
+    padding: 10px;
+    cursor: Pointer;
+}
+
+.postItem {
+    padding: 10px;
+    border-bottom: 1px solid #eeeeee;
+    justify-content: space-between;
+}
+
+.postInfo {
+    flex: 1;
+    flex-direction: column;
+    padding-right: 10px;
+}
+
+.infoHead {
+    align-items: flex-end;
+    color: #777;
+}
+
+.author {
+    font-size: 18px;
+}
+
+.time {
+    font-size: 12px;
+    margin-left: 20px;
+}
+
+.postTitle {
+    padding: 10px 0;
+    text-indent: 2em;
+}
+
+.infoFoot div {
+    margin: 0 10px;
+}
+
+.infoFoot i {
+    margin: 0 3px;
+}
+
+.postAction {
+    border-left: 1px solid #eeeeee;
+}
+
+.postAction p {
+    margin: 0 10px;
+}
+
+
+.formModal{
+    width: 50vw;
+    height: 50vh;
+}
+.fromItem{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px 0;
+    /*border-bottom: 1px solid #eee;*/
+}
+.fromItem input,.fromItem select,.fromItem textarea{
+    flex: 1;
+    height: 30px;
+    font-size: 15px;
+}
+.fromItem textarea{
+    height: auto;
+    resize: none;
+    padding: 5px;
+}
