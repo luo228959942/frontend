@@ -9,11 +9,11 @@ import './iconfont/iconfont.css'
 class App extends Component {
     render() {
         return (
-            <div>
+            <React.Fragment>
                 <Route exact path="/" component={Root}/>
                 <Route exact path="/:category" component={Root}/>
                 <Route exact path="/:category/:postId" component={Detail}/>
-            </div>
+            </React.Fragment>
         );
     }
 }
