@@ -2,7 +2,7 @@ import React from 'react';
 import {connect} from 'react-redux';
 import {updateCommentVote, deleteCommentForId, getCommentForId} from '../reducer/comments/action';
 import {changeCommentModal} from "../reducer/ui/action";
-import CommentFrom from './commentForm';
+import CommentFrom from './CommentForm';
 
 class Comments extends React.Component {
     render() {

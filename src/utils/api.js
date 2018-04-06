@@ -36,7 +36,7 @@ export const getPosts = () =>
 * title - String
 * body - String
 * author - String
-* category: Any of the categories listed in categories.js. Feel free to extend this list as you desire.
+* category: Any of the categories listed in Categories.js. Feel free to extend this list as you desire.
 *
 * */
 export const createPost = (body) =>

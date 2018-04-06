@@ -1,16 +1,17 @@
 import React,{Component} from 'react';
-import Categories from './categories'
-import Posts from './posts';
+import Categories from './Categories'
+import Posts from './Posts';
 import {connect} from 'react-redux';
-import {getPostsForAll} from "../reducer/posts/action";
+import {getPostsForAll,getPostsForCategory} from "../reducer/posts/action";
 
 class Root extends Component{
-
-    componentWillMount(){
-        this.props.getPostsForAll()
-    }
-
     render(){
+        // console.log(this.props.match.params.category);
+        if(this.props.match.params.category){
+            this.props.getPostsForCategory(this.props.match.params.category);
+        }else {
+            this.props.getPostsForAll()
+        }
         return(
             <div>
                 <header>
@@ -35,7 +36,8 @@ const mapStateToProps=()=>{
 
 const mapDispatchToProps=(dispatch)=>{
     return{
-        getPostsForAll:(category)=>dispatch(getPostsForAll()),
+        getPostsForAll:()=>dispatch(getPostsForAll()),
+        getPostsForCategory:(category)=>dispatch(getPostsForCategory(category)),
     }
 };
 

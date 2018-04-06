@@ -1,7 +1,7 @@
 import React, {Component} from 'react';
 import {Route} from 'react-router-dom'
-import Root from './component';
-import Detail from './component/detail';
+import Root from './component/Root';
+import Detail from './component/Detail';
 
 import './App.css';
 import './iconfont/iconfont.css'

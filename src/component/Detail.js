@@ -1,12 +1,12 @@
 import React from 'react';
 import {connect} from 'react-redux';
 import {getPostsForPostId} from '../reducer/post/action';
-import Comments from './comments';
+import Comments from './Comments';
 import {getCommentsForPostID} from '../reducer/comments/action';
 import {setParentId} from "../reducer/comment/action";
 import {deletePostForId, updatePostVote} from "../reducer/posts/action";
 import {changePostModal,changeCommentModal} from "../reducer/ui/action";
-import CommentFrom from './commentForm';
+import CommentFrom from './CommentForm';
 
 class Detail extends React.Component {
     componentWillMount() {

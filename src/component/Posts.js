@@ -3,7 +3,7 @@ import {connect} from 'react-redux';
 import {Link} from 'react-router-dom';
 import {setPosts, getPostsForAll, getPostsForCategory, deletePostForId,updatePostVote} from "../reducer/posts/action";
 import {getPostsForPostId, setDefaultPost} from '../reducer/post/action'
-import PostForm from './postForm';
+import PostForm from './PostForm';
 import {changePostModal} from "../reducer/ui/action";
 
 class Posts extends Component {
@@ -89,7 +89,11 @@ const mapDispatchToProps = (dispatch) => {
             posts.sort((v1, v2) => {
                 return v1[key] < v2[key];
             });
-            dispatch(setPosts(posts))
+            let newPosts = posts.reduce((posts, post) => {
+                posts[post.id] = post;
+                return posts;
+            }, {});
+            dispatch(setPosts(newPosts))
         },
         getPostsForAll: () => dispatch(getPostsForAll()),
         getPostsForCategory: (category) => dispatch(getPostsForCategory(category)),
